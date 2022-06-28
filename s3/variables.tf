@@ -1,12 +1,12 @@
 variable "aws_region" {
   description = "The AWS region to use to create resources."
-  default     = "Asia Pacific (Mumbai) ap-south-1"
+  default     = "ap-south-1"
 }
 
-variable "bucket_prefix" {
+variable "bucket_name" {
     type        = string
     description = "(required since we are not using 'bucket') Creates a unique bucket name beginning with the specified prefix. Conflicts with bucket."
-    default     = "my-s3bucket-"
+    default     = "my-s3bucket-12345678"
 }
 
 variable "tags" {
@@ -30,3 +30,14 @@ variable "acl" {
     default     = "private"
 }
 
+variable "tags_name" {
+    type = string
+    description = "(optional) describe your variable"
+    default = "demo"
+}
+
+variable "tags_env" {
+    type = string
+    description = "(optional) describe your variable"
+    default = "dev"
+}
