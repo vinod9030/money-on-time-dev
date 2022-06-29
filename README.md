@@ -1,2 +1,2 @@
-# terraform-on-aws-repo
+# money-on-time-dev
 Sample Terraform files to create S3 bucket in AWS
